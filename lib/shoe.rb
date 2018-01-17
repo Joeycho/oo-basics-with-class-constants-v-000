@@ -6,6 +6,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS.each do |b|
+      if b == brand
+        return
+      end
+    end
     BRANDS << brand
   end
 
